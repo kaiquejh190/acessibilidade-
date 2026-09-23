@@ -1,0 +1,205 @@
+''<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Segurança Digital para a Melhor Idade</title>
+    <style>
+        /* Cores acessíveis (Alto Contraste) e Fontes Grandes */
+        :root {
+            --cor-fundo: #F4F7F6;
+            --cor-texto: #1A1A1A;
+            --cor-primaria: #004D40; /* Verde escuro (passa segurança e boa leitura) */
+            --cor-secundaria: #00796B;
+            --cor-destaque: #D32F2F; /* Vermelho para alertas */
+            --cor-card-fundo: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px; /* Fonte significativamente maior para leitura confortável */
+            line-height: 1.6;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            padding-bottom: 60px;
+        }
+
+        /* Topo do Aplicativo */
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 5px solid var(--cor-secundaria);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background-color: var(--cor-card-fundo);
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #D0D0D0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Dicas em Formato de Cards Grandes */
+        .dica-card {
+            background-color: var(--cor-card-fundo);
+            border-left: 10px solid var(--cor-secundaria);
+            border-top: 2px solid #D0D0D0;
+            border-right: 2px solid #D0D0D0;
+            border-bottom: 2px solid #D0D0D0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .dica-card h2 {
+            color: var(--cor-primaria);
+            font-size: 26px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dica-card p {
+            margin-bottom: 15px;
+        }
+
+        /* Alertas destacados */
+        .alerta {
+            background-color: #FFEBEE;
+            border: 2px solid var(--cor-destaque);
+            padding: 15px;
+            border-radius: 6px;
+            color: #C62828;
+            font-weight: bold;
+        }
+
+        /* Rodapé de Ajuda */
+        footer {
+            background-color: #E0F2F1;
+            border-top: 3px solid var(--cor-primaria);
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-weight: bold;
+            color: var(--cor-primaria);
+            margin-bottom: 15px;
+        }
+
+        /* Botão grande e fácil de clicar */
+        .botao-ajuda {
+            display: inline-block;
+            background-color: var(--cor-destaque);
+            color: white;
+            text-decoration: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .botao-ajuda:hover, .botao-ajuda:focus {
+            background-color: #B71C1C;
+            outline: 4px solid #000; /* Facilita navegação por teclado */
+        }
+
+        /* Ajustes para telas muito pequenas (Celulares antigos) */
+        @media (max-width: 480px) {
+            body {
+                font-size: 20px;
+            }
+            header h1 {
+                font-size: 26px;
+            }
+            .dica-card h2 {
+                font-size: 22px;
+            }
+            .botao-ajuda {
+                width: 100%;
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Guia Prático de Segurança Digital</h1>
+        <p>Aprenda a navegar na internet com total tranquilidade e proteção.</p>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <p>A internet é maravilhosa para falar com a família e ver notícias. Seguir estas dicas simples vai manter você longe de armadilhas!</p>
+        </section>
+
+        <!-- Dica 1 -->
+        <article class="dica-card">
+            <h2>1. Cuidado com Mensagens Urgentes</h2>
+            <p>Se você receber uma mensagem no WhatsApp ou SMS dizendo que sua conta do banco vai fechar, ou que um parente precisa de dinheiro urgente, **pare e respire**.</p>
+            <div class="alerta">
+                O que fazer: Não clique em links. Ligue direto para o seu parente ou para o seu banco usando o número que você já conhece.
+            </div>
+        </article>
+
+        <!-- Dica 2 -->
+        <article class="dica-card">
+            <h2>2. Crie Senhas Fortes e Seguras</h2>
+            <p>Evite usar sua data de nascimento, nome de netos ou sequências como "123456" para as suas senhas do banco ou redes sociais.</p>
+            <p><strong>Dica de ouro:</strong> Misture letras maiúsculas, minúsculas, números e símbolos (como @ ou #). Anote suas senhas em um caderno físico guardado em um lugar seguro na sua casa.</p>
+        </article>
+
+        <!-- Dica 3 -->
+        <article class="dica-card">
+            <h2>3. Desconfie de Prêmios e Ofertas Demais</h2>
+            <p>Se você receber um aviso dizendo que ganhou um sorteio no qual não se inscreveu, ou que um produto caríssimo está quase de graça, desconfie na hora.</p>
+            <div class="alerta">
+                O que fazer: Nunca informe o número do seu cartão de crédito ou seus documentos para receber um prêmio.
+            </div>
+        </article>
+
+        <!-- Dica 4 -->
+        <article class="dica-card">
+            <h2>4. O Banco Não Pede Seus Dados</h2>
+            <p>Nenhum banco liga para pedir a sua senha, o número do seu cartão, ou para pedir que você faça uma transferência para "cancelar um erro".</p>
+            <p>Se alguém ligar fingindo ser do banco e pedir isso, desligue o telefone imediatamente.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Ficou com alguma dúvida ou está desconfiado de algo na internet?</p>
+        <a href="tel:100" class="botao-ajuda">Pedir Ajuda Gratuitamente (Disque 100)</a>
+    </footer>
+
+</body>
+</html>
