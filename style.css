@@ -1,0 +1,147 @@
+    <style>
+        /* Cores acessíveis (Alto Contraste) e Fontes Grandes */
+        :root {
+            --cor-fundo: #F4F7F6;
+            --cor-texto: #1A1A1A;
+            --cor-primaria: #004D40; /* Verde escuro (passa segurança e boa leitura) */
+            --cor-secundaria: #00796B;
+            --cor-destaque: #D32F2F; /* Vermelho para alertas */
+            --cor-card-fundo: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px; /* Fonte significativamente maior para leitura confortável */
+            line-height: 1.6;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            padding-bottom: 60px;
+        }
+
+        /* Topo do Aplicativo */
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 5px solid var(--cor-secundaria);
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .introducao {
+            background-color: var(--cor-card-fundo);
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid #D0D0D0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Dicas em Formato de Cards Grandes */
+        .dica-card {
+            background-color: var(--cor-card-fundo);
+            border-left: 10px solid var(--cor-secundaria);
+            border-top: 2px solid #D0D0D0;
+            border-right: 2px solid #D0D0D0;
+            border-bottom: 2px solid #D0D0D0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .dica-card h2 {
+            color: var(--cor-primaria);
+            font-size: 26px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .dica-card p {
+            margin-bottom: 15px;
+        }
+
+        /* Alertas destacados */
+        .alerta {
+            background-color: #FFEBEE;
+            border: 2px solid var(--cor-destaque);
+            padding: 15px;
+            border-radius: 6px;
+            color: #C62828;
+            font-weight: bold;
+        }
+
+        /* Rodapé de Ajuda */
+        footer {
+            background-color: #E0F2F1;
+            border-top: 3px solid var(--cor-primaria);
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-weight: bold;
+            color: var(--cor-primaria);
+            margin-bottom: 15px;
+        }
+
+        /* Botão grande e fácil de clicar */
+        .botao-ajuda {
+            display: inline-block;
+            background-color: var(--cor-destaque);
+            color: white;
+            text-decoration: none;
+            padding: 20px 40px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        .botao-ajuda:hover, .botao-ajuda:focus {
+            background-color: #B71C1C;
+            outline: 4px solid #000; /* Facilita navegação por teclado */
+        }
+
+        /* Ajustes para telas muito pequenas (Celulares antigos) */
+        @media (max-width: 480px) {
+            body {
+                font-size: 20px;
+            }
+            header h1 {
+                font-size: 26px;
+            }
+            .dica-card h2 {
+                font-size: 22px;
+            }
+            .botao-ajuda {
+                width: 100%;
+                padding: 20px 10px;
+            }
+        }
+    </style>
+    
